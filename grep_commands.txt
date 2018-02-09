@@ -1,4 +1,0 @@
-egrep --include='*.php' -lr 'eval\/\*'
-egrep --include='*.php' -lr '\!?define\('ALREADY_RUN_'
-egrep --include='*.php' -lr '\$[A-Za-z]{1,}=Array\(\$[a-z]{1}[0-9A-Za-z]{1,10}\['
-grep --include='*.php' -HPr '^(?=<\?php)(.*)(?=\?>( ){0,10}<(!DOCTYPE (HTML|html)>|!doctype html>|html>|\?php)$)' . | grep -lE "@?(\\\$_POST\[|\\\$GLOBALS|base64_decode\(|implode\(|function_exists|array_map|eval\(|str_rot13\(|error_reporting\(0\)|ini_set\(|ignore_user_abort\(1\))|(\\\$([A-Za-z]+([0-9]){1}[A-Za-z0-9]+))" | cut -d ":" -f2
